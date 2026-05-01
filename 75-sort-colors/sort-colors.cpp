@@ -1,4 +1,4 @@
-class Solution {
+class Solution {//Dutch naional flag algo(3 pointers low,mid,high)
 public:
     void sortColors(vector<int>& nums) {
         int low=0,mid=0,high=nums.size()-1;

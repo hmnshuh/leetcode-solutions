@@ -1,11 +1,15 @@
 class Solution {
 public:
-    bool containsDuplicate(vector<int>& nums) {// revise hash
-        unordered_set<int>s;
-        for(int i:nums){
-           if( s.count(i) ) return true;
-           s.insert(i);
+    bool containsDuplicate(vector<int>& nums) {
+        unordered_set<int> num;
 
+        for(int i=0;i<nums.size();i++){
+            if(num.count(nums[i])) return true;
+        
+        else{
+            num.insert(nums[i]);
+
+        }
         }
         return false;
     }

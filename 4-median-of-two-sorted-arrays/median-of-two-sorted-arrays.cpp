@@ -28,3 +28,4 @@ public:
        return median;
     }
 };
+//Do it with Binary Search.

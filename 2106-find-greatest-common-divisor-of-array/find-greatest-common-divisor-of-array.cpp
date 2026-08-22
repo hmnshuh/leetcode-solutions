@@ -9,15 +9,8 @@ public:
             if(nums[i]<smallest) smallest =nums[i];
         }
 
-        for(int i=smallest;i>1;i--){
+        return gcd(greatest,smallest);
 
-            if(greatest%i==0 && smallest%i==0){
-                return i;
-
-
-            }
-
-        }     
-        return 1; 
+            
     }
 };

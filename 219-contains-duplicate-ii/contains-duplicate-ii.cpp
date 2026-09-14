@@ -6,7 +6,7 @@ public:
         if(nums.size()<2) return false;
         for(int i=0;i<nums.size();i++){
                 if(mp.count(nums[i])){
-                  num =  abs(i-mp[nums[i]]);}
+                  num =  (i-mp[nums[i]]);}
 
                   if(num<=k) return true;
 
